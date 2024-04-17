@@ -1,9 +1,9 @@
-name: mysite infra update in K8s manifest workflow
+name: app infra update K8s manifest workflow
 
 # Controls when the workflow will run
 on:
   repository_dispatch:
-    types: Update-mysite-service-build-number
+    types: app-update-service-build-number
 
 jobs:
   DevDeploy:
