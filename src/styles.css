@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #66bb6a; /* Green header background */
+    background-color: #336cd0; /* Green header background */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -49,11 +49,11 @@ section {
 }
 
 section h2 {
-    color: #66bb6a; /* Green section headings */
+    color: #336cd0; /* Green section headings */
 }
 
 footer {
-    background-color: #66bb6a; /* Green footer background */
+    background-color: #336cd0; /* Green footer background */
     color: #fff;
     text-align: center;
     padding: 8px;
