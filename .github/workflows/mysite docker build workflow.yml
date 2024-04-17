@@ -47,7 +47,7 @@ jobs:
 
     - name: Build docker image
       run: |
-        cd book-library-service
+        cd src
         docker images
         docker build -t $IMAGE_NAME:$BUILD_NUMBER .
         docker images
