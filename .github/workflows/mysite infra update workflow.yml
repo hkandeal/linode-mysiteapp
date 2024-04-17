@@ -1,4 +1,4 @@
-name: mysite infra update in K8s Manifest
+name: mysite infra update in K8s manifest workflow
 
 # Controls when the workflow will run
 on:
@@ -26,4 +26,4 @@ jobs:
           value: 'hossamgbm/mysite-app:${{ github.event.client_payload.buildnumber}}'
           masterBranchName: 'main'
           branch: 'main'
-          message: 'Update Image Version to hossamgbm/bozo-book-info-service:${{ github.event.client_payload.buildnumber }}' 
+          message: 'Update Image Version to hossamgbm/mysite-app:${{ github.event.client_payload.buildnumber }}' 
