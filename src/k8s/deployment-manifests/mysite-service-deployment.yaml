@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,29 +13,20 @@ spec:
       namespace: mysite-app
   template:
     metadata:
-      #annotations:
-      #vault.hashicorp.com/agent-init-first: 'true'
-      #vault.hashicorp.com/agent-inject: 'true'
-      #vault.hashicorp.com/role: bozobooks-app
-      #vault.hashicorp.com/agent-inject-secret-config: bozobooks/data/googleapi-config
-      #vault.hashicorp.com/agent-inject-template-config: |
-      # {{ with secret "bozobooks/data/googleapi-config" -}}
-      #  export googleapikey="{{ .Data.data.googleapikey }}"
-      #{{- end }} 
       labels:
         app: mysite-app
         namespace: mysite-app
     spec:
       containers:
-      - name: rmysite-app
-        image: hossamgbm/mysite-app:5
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
-        resources:
-          requests:
-            memory: "300Mi"
-            cpu: "500m"
-          limits:
-            memory: "350Mi"
-            cpu: "1000m"
+        - name: rmysite-app
+          image: hossamgbm/mysite-app:17
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 300Mi
+              cpu: 500m
+            limits:
+              memory: 350Mi
+              cpu: 1000m
