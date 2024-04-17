@@ -6,7 +6,7 @@ on:
     types: app-update-service-build-number
 
 permissions:
-  contents: write-all
+  contents: write
   
 jobs:
   DevDeploy:
