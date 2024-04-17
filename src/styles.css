@@ -1,0 +1,112 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+header {
+    background-color: #66bb6a; /* Green header background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px; /* Larger font size */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px; /* Increased margin */
+    border: 5px solid #fff; /* White border around photo */
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: #388e3c; /* Dark green background */
+    padding: 8px 12px; /* Increased padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.social-links a:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+section {
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    margin-bottom: 20px; /* Increased space between sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+section h2 {
+    color: #66bb6a; /* Green section headings */
+}
+
+footer {
+    background-color: #66bb6a; /* Green footer background */
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3, .education-item h3 {
+    margin-top: 0;
+}
+
+.company-icon {
+    display: inline-block;
+    background-color: #66bb6a; /* Green background for icon container */
+    color: #fff;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    text-align: center;
+    line-height: 40px; /* Center icon vertically */
+    border-radius: 50%; /* Circular shape */
+    margin-right: 20px; /* Spacing between icon and text */
+}
+
+.company-icon i {
+    font-size: 20px; /* Adjust icon size as needed */
+}
+
+.about-item .icon-placeholder {
+    display: inline-block;
+    background-color: #66bb6a; /* Green background for icon container */
+    color: #fff;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    text-align: center;
+    line-height: 40px; /* Center icon vertically */
+    border-radius: 50%; /* Circular shape */
+    margin-right: 20px; /* Spacing between icon and text */
+}
+
+.about-item .icon-placeholder i {
+    font-size: 20px; /* Adjust icon size as needed */
+}
