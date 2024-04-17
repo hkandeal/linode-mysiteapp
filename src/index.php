@@ -1,10 +1,3 @@
-<?php
-
-echo "Hello, World from Docker! <br>";
-echo "Hello ECS! <br>";
-//echo '<img src="https://www.docker.com/sites/default/files/horizontal.png">';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -128,6 +121,11 @@ echo "Hello ECS! <br>";
     <footer>
         <p>&copy; 2024 Hossam Kandel Mohamed</p>
     </footer>
+    <?php
+    echo "Hello, World from k8s linode! <br>";
+    //echo "Hello ECS! <br>";
+    //echo '<img src="https://www.docker.com/sites/default/files/horizontal.png">';
+    ?>
 </body>
 
 </html>
