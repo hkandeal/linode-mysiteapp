@@ -83,8 +83,24 @@ jobs:
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.GITOPS_SLACK_API }}
         
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
+    - name: Invoke mysite Infra GitOps pipe
+      run: |
+          curl -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{secrets.API_TOKEN_GITHUB }}" \
+          -H "Content-Type: application/json" \
+          --request POST \
+          --data '{"event_type": "update-mysite-service-build-number", "client_payload": { "buildnumber": "'"$BUILD_NUMBER"'" }}' \
+          https://api.github.com/repos/hkandeal/linode-mysiteapp/dispatches
 
-    # - name: Run test suite
-    #   run: composer run-script test
+    - name: Invoked Infra Workflow Slack Notification
+      uses: ravsamhq/notify-slack-action@v2
+      if: always()
+      with:
+        status: ${{ job.status }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        notification_title: "Infra Workflow trigger Status: {status_message}"
+        message_format: "{emoji} *{workflow}* {status_message} in <{repo_url}|{repo}>"
+        footer: "Linked Repo <{repo_url}|{repo}> | <{workflow_url}|View Workflow>"
+        notify_when: "failure, success, warning"
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.GITOPS_SLACK_API }}
