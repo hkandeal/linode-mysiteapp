@@ -5,10 +5,12 @@ on:
   repository_dispatch:
     types: app-update-service-build-number
 
+permissions:
+  contents: write-all
+  
 jobs:
   DevDeploy:
     runs-on: ubuntu-latest
-    environment: development
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
