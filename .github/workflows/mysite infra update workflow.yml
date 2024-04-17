@@ -1,4 +1,4 @@
-name: Book Info Service Build Number in K8s Manifest
+name: mysite infra update in K8s Manifest
 
 # Controls when the workflow will run
 on:
