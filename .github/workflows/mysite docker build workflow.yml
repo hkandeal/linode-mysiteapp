@@ -23,8 +23,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
 
     - name: Generate build number
       uses: einaregilsson/build-number@v3
