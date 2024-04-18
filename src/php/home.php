@@ -1,18 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hossam Kandel Mohamed</title>
+    <link rel="stylesheet" href="src/style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body>
     <header>
-        <img src="res/info.png" alt="" class="profile-photo" width="150" height="150">
+        <img src="src/res/info.png" alt="" class="profile-photo" width="150" height="150">
         <h1>Hossam Kandel Mohamed</h1>
         <p>Solutions Architect</p>
         <div class="social-links">
@@ -114,18 +115,17 @@
             <div class="education-item">
                 <h3>Bachelor of Science in Computer Science</h3>
                 <p>Cairo university, Egypt 2002/2006</p>
+                <?php
+                echo "<i>Hello, from k8s linode! </i><br>";
+                ?>
             </div>
-    </section>
 
+    </section>
 
     <footer>
         <p>&copy; 2024 Hossam Kandel Mohamed</p>
     </footer>
-    <?php
-    echo "Hello, World from k8s linode! <br>";
-    //echo "Hello ECS! <br>";
-    //echo '<img src="https://www.docker.com/sites/default/files/horizontal.png">';
-    ?>
+
 </body>
 
 </html>
