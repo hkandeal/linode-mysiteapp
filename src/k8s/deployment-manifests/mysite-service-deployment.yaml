@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: rmysite-app
-          image: hossamgbm/mysite-app:22
+          image: hossamgbm/mysite-app:23
           imagePullPolicy: Always
           ports:
             - containerPort: 80
