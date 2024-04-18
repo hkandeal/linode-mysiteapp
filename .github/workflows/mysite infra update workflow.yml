@@ -23,7 +23,7 @@ jobs:
       - name: Update Image Version in the yaml
         uses: fjogeleit/yaml-update-action@main
         with:
-          valueFile: 'src/k8s/deployment-manifests/mysite-service-deployment.yaml'
+          valueFile: '.k8s/deployment-manifests/mysite-service-deployment.yaml'
           propertyPath: 'spec.template.spec.containers[0].image'
           value: 'hossamgbm/mysite-app:${{ github.event.client_payload.buildnumber}}'
           masterBranchName: 'main'
