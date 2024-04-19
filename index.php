@@ -12,10 +12,10 @@ switch ($request) {
     case '':
         require __DIR__ . '/src/php/home.php';
         break;
-    case '/linode-mysiteapp/':
+    case '/linode-mysiteapp/about':
         require __DIR__ . '/src/php/home.php';
         break;
-    case '/linode-mysiteapp/about':
+    case '/about':
         require __DIR__ . '/src/php/home.php';
         break;
     default:
