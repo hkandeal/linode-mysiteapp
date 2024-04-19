@@ -21,10 +21,19 @@ header h1 {
 
 .profile-photo {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px; /* Increased margin */
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px; /* Increased margin */
     border: 5px solid #fff; /* White border around photo */
+}
+
+.company-photo {
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0px; /* Increased margin */
+    margin-right: 5px; /* Increased margin */
+    border: 0px solid #ce2222; /* White border around photo */
 }
 
 .social-links a {
@@ -83,11 +92,11 @@ li {
     display: inline-block;
     background-color: #e71240; /* Green background for icon container */
     color: #fff;
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
     text-align: center;
-    line-height: 40px; /* Center icon vertically */
-    border-radius: 50%; /* Circular shape */
+    line-height: 0px; /* Center icon vertically */
+    border-radius: 20%; /* Circular shape */
     margin-right: 20px; /* Spacing between icon and text */
 }
 
@@ -105,8 +114,5 @@ li {
     line-height: 40px; /* Center icon vertically */
     border-radius: 50%; /* Circular shape */
     margin-right: 20px; /* Spacing between icon and text */
-}
-
-.about-item .icon-placeholder i {
-    font-size: 20px; /* Adjust icon size as needed */
+    font-size: 25px; /* Adjust icon size as needed */
 }

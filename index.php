@@ -15,7 +15,7 @@ if ($request_uri === '/' || $request_uri === '/linode-mysiteapp/') {
 
 } else {
 
-    $route = '/src/php/404.php';
+    $route = '/src/php/home.php';
 
 }
 
