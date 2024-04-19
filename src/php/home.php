@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossam Kandel Mohamed</title>
     <link rel="stylesheet" href="src/style/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 
@@ -20,6 +20,10 @@
             <a href="https://www.linkedin.com/in/hossamkandel/" target="_blank"><i class="fab fa-linkedin"></i>
                 LinkedIn</a>
             <a href="https://github.com/hkandeal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <!-- Add more social links as needed -->
+            <a href="https://www.ipsc.ie/campaigns/consumer-boycott" target="_blank"><i
+                    class="fas fa-skull-crossbones"></i>
+                Boycott Israel</a>
             <!-- Add more social links as needed -->
         </div>
     </header>
@@ -62,7 +66,7 @@
                     <h3><img src="src/res/backbase.jpeg" alt="" class="company-photo">Backbase, 2023 -
                         Present</h3>
                 </u></p>
-            <i class="fa fa-address-book"> Senior Solutions Architect</i>
+            <i class="fas fa-code"> Senior Solutions Architect</i>
             <ul>
             </ul>
         </div>
@@ -70,7 +74,7 @@
             <p><u>
                     <h3><img src="src/res/emirates.jpeg" alt="" class="company-photo">Emirates Group, 2021 - 2023</h3>
                 </u></p>
-            <i class="fa fa-address-book"> Solutions Architect</i>
+            <i class="fas fa-code"> Solutions Architect</i>
             <ul>
                 <li>• Working with the enterprise, lead architects and business on defining architectural enablers,
                     transitions phases and solutions.</li>
@@ -96,7 +100,7 @@
                     <h3><img src="src/res/gbm.jpeg" alt="" class="company-photo">GBM, 2015 - 2021</h3>
                 </u>
             </p>
-            <i class="fa fa-address-book"> Digital Business Solutions Technical Architect</i>
+            <i class="fas fa-code"> Digital Business Solutions Technical Architect</i>
             <ul>
                 <li>• Creating systems high/low level design, building right delivery team structure
                 <li> • Working closely on the ground with the implementation teams on the technical daily
@@ -127,7 +131,7 @@
                         2015</h3>
                 </u>
             </p>
-            <i class="fa fa-address-book"> Enterprise Content Management Specialist / J2EE Senior Developer</i>
+            <i class="fas fa-code"> Enterprise Content Management Specialist / J2EE Senior Developer</i>
             <ul>
                 <li>• Providing detailed low level and high-level technical design for my selected projects.
                 <li>• Implementation of IBM Case Manager/FileNet projects, and custom J2EE applications.
@@ -142,7 +146,7 @@
                         2013</h3>
                 </u>
             </p>
-            <i class="fa fa-address-book">IT Specialist - Software Engineer</i>
+            <i class="fas fa-code"> IT Specialist - Software Engineer</i>
             <ul>
                 <li>• Develop IBM FileNet and IBM Case Manager BPM solutions.
                 <li>• Develop and support different custom J2EE enterprise applications.
