@@ -9,11 +9,11 @@ switch ($request) {
     case '':
         require __DIR__ . '/src/php/home.php';
         break;
-    case '/about/':
-        require __DIR__ . '/src/php/about.php';
+    case '/contact/':
+        require __DIR__ . '/src/php/contact.php';
         break;
-    case '/about':
-        require __DIR__ . '/src/php/about.php';
+    case '/contact':
+        require __DIR__ . '/src/php/contact.php';
         break;
     default:
         http_response_code(404);

@@ -24,6 +24,8 @@
             <a href="https://www.ipsc.ie/campaigns/consumer-boycott" target="_blank"><i
                     class="fas fa-skull-crossbones"></i>
                 Boycott Israel</a>
+            <a href="/contact"><i class="far fa-comments"></i>
+                Contact</a>
             <!-- Add more social links as needed -->
         </div>
     </header>
