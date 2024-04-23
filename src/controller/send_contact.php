@@ -83,7 +83,7 @@
             exit;
         }
 
-        $host = "registration-app-mysql.apis-services.cluster.local:3306";
+        $host = "registration-app-mysql.apis-services.cluster.local";
         $username = "root";
         $password = "rootpassword";
         $dbname = "mysite_db";
@@ -91,7 +91,6 @@
         // Attempt to connect to the database
         // Create connection
         $conn = new mysqli($host, $username, $password, $dbname);
-        // Check connection
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
