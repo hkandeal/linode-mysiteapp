@@ -1,3 +1,6 @@
 docker build -t mysite .
  
 docker run -p 8080:80 mysite
+
+
+php -S localhost:8000

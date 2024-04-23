@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossam Kandel Mohamed</title>
-    <link rel="stylesheet" href="src/style/styles.css">
+    <link rel="stylesheet" href="public/style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 
 <body>
     <header>
-        <img src="src/res/info.png" alt="" class="profile-photo">
+        <img src="public/res/info.png" alt="" class="profile-photo">
         <h1>Hossam Kandel Mohamed</h1>
         <p>Solutions Architect</p>
         <div class="social-links">
@@ -65,7 +65,7 @@
 
         <div class="experience-item">
             <p><u>
-                    <h3><img src="src/res/backbase.jpeg" alt="" class="company-photo">Backbase, 2023 -
+                    <h3><img src="public/res/backbase.jpeg" alt="" class="company-photo">Backbase, 2023 -
                         Present</h3>
                 </u></p>
             <i class="fas fa-code"> Senior Solutions Architect</i>
@@ -74,7 +74,8 @@
         </div>
         <div class="experience-item">
             <p><u>
-                    <h3><img src="src/res/emirates.jpeg" alt="" class="company-photo">Emirates Group, 2021 - 2023</h3>
+                    <h3><img src="public/res/emirates.jpeg" alt="" class="company-photo">Emirates Group, 2021 - 2023
+                    </h3>
                 </u></p>
             <i class="fas fa-code"> Solutions Architect</i>
             <ul>
@@ -99,7 +100,7 @@
         <div class="experience-item">
             <p>
                 <u>
-                    <h3><img src="src/res/gbm.jpeg" alt="" class="company-photo">GBM, 2015 - 2021</h3>
+                    <h3><img src="public/res/gbm.jpeg" alt="" class="company-photo">GBM, 2015 - 2021</h3>
                 </u>
             </p>
             <i class="fas fa-code"> Digital Business Solutions Technical Architect</i>
@@ -129,7 +130,7 @@
         <div class="experience-item">
             <p>
                 <u>
-                    <h3><img src="src/res/ebla.jpeg" alt="" class="company-photo">EBLA Computer Consultancy, 2013 -
+                    <h3><img src="public/res/ebla.jpeg" alt="" class="company-photo">EBLA Computer Consultancy, 2013 -
                         2015</h3>
                 </u>
             </p>
@@ -144,7 +145,7 @@
         <div class="experience-item">
             <p>
                 <u>
-                    <h3><img src="src/res/ibm.jpeg" alt="" class="company-photo">IBM Global Delivery Center, 2010 -
+                    <h3><img src="public/res/ibm.jpeg" alt="" class="company-photo">IBM Global Delivery Center, 2010 -
                         2013</h3>
                 </u>
             </p>
