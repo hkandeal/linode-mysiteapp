@@ -64,6 +64,60 @@
 
 
 <body>
+    <?php
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form data
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+
+        error_log(print_r("name:" . $name, true));
+        error_log(print_r("email:" . $email, true));
+        error_log(print_r("message:" . $message, true));
+
+        // Validate the email (you may want to add more robust validation)
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            http_response_code(400); // Bad Request
+            echo "Invalid email format";
+            exit;
+        }
+
+        $host = "127.0.01";
+        $username = "root";
+        $password = "admin";
+        $dbname = "mysite_db";
+
+        // Attempt to connect to the database
+        // Create connection
+        $conn = new mysqli($host, $username, $password, $dbname);
+        // Check connection
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // prepare and bind
+        $stmt = $conn->prepare("INSERT INTO message (name, mail, message , message_date) VALUES (?, ?, ? , NOW())");
+        $stmt->bind_param("sss", $name, $email, $message);
+
+        // set parameters and execute
+    
+        $stmt->execute();
+        ///echo "New records created successfully";
+    
+        $stmt->close();
+        $conn->close();
+        // Redirect to a thank you page
+        // header("Location: thank-you.php");
+        //exit;
+    } else {
+        // If the request method is not POST, return a 405 Method Not Allowed response
+        http_response_code(405);
+        echo "Method Not Allowed";
+        exit;
+    }
+    ?>
     <div class="container">
         <h1>Thanks, we received your message</h1>
         <a href="/" class="home-link"><i class="fas fa-hand-point-right"></i> Home page</a>

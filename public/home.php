@@ -23,6 +23,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Hossam Kandel Mohamed" />
+    <meta property="og:image" content="https://hossam.io/public/res/info.png" />
+    <meta property="og:description" content="Personal Website" />
+    <meta property="og:url" content="https://hossam.io/" />
+    <meta property="og:image:width" content='1200' />
+    <meta property="og:image:height" content='627' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website' />
 
 </head>
 
