@@ -65,7 +65,7 @@
 
 <body>
     <div class="container">
-        <h1>Whooo, Thanks, we received your message</h1>
+        <h1>Thanks, we received your message</h1>
         <a href="/" class="home-link"><i class="fas fa-hand-point-right"></i> Home page</a>
     </div>
 </body>
