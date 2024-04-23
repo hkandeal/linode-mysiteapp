@@ -1,4 +1,14 @@
 /* Reset styles */
+
+/* public/style/home-style.css */
+
+.profile-photo {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
