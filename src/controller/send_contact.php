@@ -83,9 +83,9 @@
             exit;
         }
 
-        $host = "127.0.01";
+        $host = "registration-app-mysql.apis-services";
         $username = "root";
-        $password = "admin";
+        $password = "rootpassword";
         $dbname = "mysite_db";
 
         // Attempt to connect to the database
