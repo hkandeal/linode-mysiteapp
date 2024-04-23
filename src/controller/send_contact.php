@@ -83,7 +83,7 @@
             exit;
         }
 
-        $host = "registration-app-mysql.apis-services";
+        $host = "registration-app-mysql.apis-services.cluster.local:3306";
         $username = "root";
         $password = "rootpassword";
         $dbname = "mysite_db";
