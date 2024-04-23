@@ -17,3 +17,7 @@ CREATE TABLE `mysite_db`.`message` (
 
 ALTER TABLE `mysite_db`.`message` 
 ADD COLUMN `message_date` DATETIME NULL AFTER `mail`;
+
+
+mysql -u root -prootpassword -h HOSTNAMEORIP DATABASENAME 
+
