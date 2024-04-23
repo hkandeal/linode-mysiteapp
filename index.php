@@ -32,8 +32,12 @@ switch ($url) {
     case '/home':
         require __DIR__ . '/public/home.php';
         break;
+    case '/sendcontact':
+        require __DIR__ . '/src/controller/send_contact.php';
+        break;
     default:
         http_response_code(404);
         require __DIR__ . '/public/404.php';
         break;
 }
+
