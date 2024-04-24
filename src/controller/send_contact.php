@@ -87,22 +87,22 @@
         error_log(print_r("host0:" . $host0, true));
 
         $host =
-            //getenv('db-host', true) ?: getenv('db-host');
-            $env["MYSQL_HOST"];
+            getenv('MYSQL_HOST', true) ?: getenv('MYSQL_HOST');
+        //$env["MYSQL_HOST"];
         error_log(print_r("host:" . $host, true));
 
         $username =
-            //getenv('db-user', true) ?: getenv('db-user');
-            $env["MYSQL_USER"];
-
+            getenv('MYSQL_USER', true) ?: getenv('MYSQL_USER');
+        //$env["MYSQL_USER"];
+    
         $password =
-            //getenv('db-pwd', true) ?: getenv('db-pwd');
-            $env["MYSQL_PASSWORD"];
-
+            getenv('MYSQL_PASSWORD', true) ?: getenv('MYSQL_PASSWORD');
+        ///$env["MYSQL_PASSWORD"];
+    
         $dbname =
-            //getenv('db-name', true) ?: getenv('db-name');
-            $env["MYSQL_DATABASE"];
-
+            getenv('MYSQL_DATABASE', true) ?: getenv('MYSQL_DATABASE');
+        //$env["MYSQL_DATABASE"];
+    
         // Attempt to connect to the database
         // Create connection
         $conn = new mysqli($host, $username, $password, $dbname);
