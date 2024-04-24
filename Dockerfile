@@ -1,5 +1,3 @@
-# ARG PHP_VERSION=$PHP_VERSION
-# FROM php:${PHP_VERSION}-apache
 FROM php:8:3-apache
 
 # Setup Debian
