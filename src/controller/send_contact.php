@@ -65,6 +65,7 @@
 
 <body>
     <?php
+    $env = parse_ini_file('.env');
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form data
@@ -82,20 +83,25 @@
             echo "Invalid email format";
             exit;
         }
+        $host0 = getenv('MYSQL_HOST', true) ?: getenv('MYSQL_HOST');
+        error_log(print_r("host0:" . $host0, true));
 
-        $host = "registration-app-mysql.apis-services.cluster.local";
-        $username = "root";
-        $password = "rootpassword";
-        $dbname = "mysite_db";
+        $host =
+            //getenv('db-host', true) ?: getenv('db-host');
+            $env["MYSQL_HOST"];
+        error_log(print_r("host:" . $host, true));
 
-        try {
-            $conn = new PDO("mysql:host=$host;dbname=myDB", $username, $password);
-            // set the PDO error mode to exception
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connected successfully";
-        } catch (PDOException $e) {
-            echo "Connection failed: " . $e->getMessage();
-        }
+        $username =
+            //getenv('db-user', true) ?: getenv('db-user');
+            $env["MYSQL_USER"];
+
+        $password =
+            //getenv('db-pwd', true) ?: getenv('db-pwd');
+            $env["MYSQL_PASSWORD"];
+
+        $dbname =
+            //getenv('db-name', true) ?: getenv('db-name');
+            $env["MYSQL_DATABASE"];
 
         // Attempt to connect to the database
         // Create connection
@@ -127,7 +133,7 @@
     }
     ?>
     <div class="container">
-        <h1>Thanks, we received your message</h1>
+        <h1>Thanks, I received your message</h1>
         <a href="/" class="home-link"><i class="fas fa-hand-point-right"></i> Home page</a>
     </div>
 </body>

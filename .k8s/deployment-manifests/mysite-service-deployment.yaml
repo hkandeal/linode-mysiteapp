@@ -18,15 +18,18 @@ spec:
         namespace: mysite-app
     spec:
       containers:
-        - name: rmysite-app
-          image: hossamgbm/mysite-app:47
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 80
-          resources:
-            requests:
-              memory: 200Mi
-              cpu: 100m
-            limits:
-              memory: 250Mi
-              cpu: 300m
+      - name: mysite-app
+        image: hossamgbm/mysite-app:46
+        envFrom:
+        - configMapRef:
+            name: site-configmap
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 200Mi
+            cpu: 100m
+          limits:
+            memory: 250Mi
+            cpu: 300m

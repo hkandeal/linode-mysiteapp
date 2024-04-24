@@ -1,0 +1,40 @@
+version: "3"
+services:
+  mysql:
+    # image: mysql
+    build:
+      context: .
+      dockerfile: ./db/Dockerfile
+    restart: always
+    ports:
+      - "3306:3306"
+    # command: --init-file /data/application/init.sql
+    volumes:
+      - db_data:/var/lib/mysql
+      # - ./mysql-dump:/docker-entrypoint-initdb.d
+    networks:
+      - backend
+    env_file:
+      - .env
+    container_name: mysql-server
+  php:
+    build:
+      context: .
+      args:
+        PHP_VERSION: ${PHP_VERSION}
+    networks:
+      - backend
+    env_file:
+      - .env
+    container_name: php
+    links:
+      - mysql
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+networks:
+  backend:
+    external: false
+volumes:
+  db_data: {}
