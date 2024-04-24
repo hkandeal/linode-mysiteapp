@@ -1,5 +1,5 @@
 docker build -t mysite .
- 
+
 docker run -p 8080:80 mysite
 
 
@@ -10,6 +10,21 @@ mysql -uroot -p
 use mysql;
 SELECT user FROM user;
 USE mysite_db;
+
+
+# ARG PHP_VERSION=$PHP_VERSION
+# FROM php:${PHP_VERSION}-apache
+
+FROM php:8.1-apache
+
+WORKDIR /var/www/html/
+
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug \
+    && a2enmod rewrite
+
+RUN docker-php-ext-install mysqli && \
+    docker-php-ext-enable mysqli
 
 
 
