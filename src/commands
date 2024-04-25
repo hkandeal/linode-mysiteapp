@@ -30,5 +30,32 @@ RUN docker-php-ext-install mysqli && \
 nslookup google.com
 
 
+RewriteEngine On
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^(.*)$ /index.php [R=301,L]
+
+
+Options FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+
+
+
+FROM php:8.1-apache
+
+WORKDIR /var/www/html/
+
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug \
+    && a2enmod rewrite
+
+RUN docker-php-ext-install mysqli && \
+    docker-php-ext-enable mysqli
+
 
 

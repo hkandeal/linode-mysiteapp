@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages</title>
-    <!-- <link rel="stylesheet" href="public/style/styles.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="public/res/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="public/res/icons/apple-icon-60x60.png">
@@ -65,7 +64,7 @@
 
 <body>
     <?php
-    $env = parse_ini_file('.env');
+
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form data
@@ -83,9 +82,18 @@
             echo "Invalid email format";
             exit;
         }
-        $host0 = getenv('MYSQL_HOST', true) ?: getenv('MYSQL_HOST');
-        error_log(print_r("host0:" . $host0, true));
 
+        $env = parse_ini_file('.env');
+        if ($env !== null) {
+            putenv("MYSQL_HOST=" . $env["MYSQL_HOST"]);
+            putenv("MYSQL_USER=" . $env["MYSQL_USER"]);
+            putenv("MYSQL_PASSWORD=" . $env["MYSQL_PASSWORD"]);
+            putenv("MYSQL_DATABASE=" . $env["MYSQL_DATABASE"]);
+        }
+
+        //$host0 = $env["MYSQL_HOST"];
+        //error_log(print_r("host0:" . $host0, true));
+    
         $host =
             getenv('MYSQL_HOST', true) ?: getenv('MYSQL_HOST');
         //$env["MYSQL_HOST"];

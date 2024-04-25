@@ -4,7 +4,7 @@ metadata:
   name: site-configmap
 data:
   APP: mysite
-  MYSQL_HOST: registration-app-mysql.apis-services.cluster.local
+  MYSQL_HOST: registration-app-mysql.apis-services.svc.cluster.local
   MYSQL_ROOT_PASSWORD: rootpassword
   MYSQL_USER: root
   MYSQL_PASSWORD: rootpassword
