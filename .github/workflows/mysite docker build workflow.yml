@@ -28,8 +28,8 @@ jobs:
       uses: falti/dotenv-action@v1.1.2
       
     
-    - name: Print env var 
-      run: echo "php version is ${{ env.PHP_VERSION }} "
+    - name: Use the version environment variable
+      run: echo "The version is ${{ env.version }}"
     
     - name: Generate build number
       uses: einaregilsson/build-number@v3
