@@ -83,13 +83,18 @@
             exit;
         }
 
-        $env = parse_ini_file('.env');
-        if ($env !== null) {
-            putenv("MYSQL_HOST=" . $env["MYSQL_HOST"]);
-            putenv("MYSQL_USER=" . $env["MYSQL_USER"]);
-            putenv("MYSQL_PASSWORD=" . $env["MYSQL_PASSWORD"]);
-            putenv("MYSQL_DATABASE=" . $env["MYSQL_DATABASE"]);
+        try {
+            $env = parse_ini_file('.env');
+            if ($env !== null) {
+                putenv("MYSQL_HOST=" . $env["MYSQL_HOST"]);
+                putenv("MYSQL_USER=" . $env["MYSQL_USER"]);
+                putenv("MYSQL_PASSWORD=" . $env["MYSQL_PASSWORD"]);
+                putenv("MYSQL_DATABASE=" . $env["MYSQL_DATABASE"]);
+            }
+        } catch (Exception $e) {
         }
+
+
 
         //$host0 = $env["MYSQL_HOST"];
         //error_log(print_r("host0:" . $host0, true));
