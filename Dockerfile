@@ -1,6 +1,7 @@
 # ARG PHP_VERSION=$PHP_VERSION
-# FROM php:${PHP_VERSION}-apache
-FROM php:8.3-apache
+ARG PHP_VERSION=php:8.3
+FROM php:${PHP_VERSION}-apache
+# FROM php:8.3-apache
 
 # Setup Debian
 RUN apt-get -y update && apt-get -y upgrade && ACCEPT_EULA=Y && apt-get install -y \

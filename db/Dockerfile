@@ -1,6 +1,7 @@
 # ARG MYSQL_VERSION=$MYSQL_VERSION
-# FROM ${MYSQL_VERSION}
-FROM arm64v8/mysql
+ARG MYSQL_VERSION=arm64v8/mysql
+FROM ${MYSQL_VERSION}
+# FROM arm64v8/mysql
 
 ARG database
 ARG password
