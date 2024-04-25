@@ -21,9 +21,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
     - uses: actions/checkout@v3
-    - run: cat .env >> $GITHUB_ENV
 
+    - name: Set variables
+      run: |
+        VER=$(cat PHP_VERSION)
+        echo "VERSION=$VER" >> $GITHUB_ENV
+    
     - name: Generate build number
       uses: einaregilsson/build-number@v3
       with:
