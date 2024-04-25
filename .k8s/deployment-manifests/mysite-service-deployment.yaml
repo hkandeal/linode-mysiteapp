@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: mysite-app
-          image: hossamgbm/mysite-app:59
+          image: hossamgbm/mysite-app:60
           envFrom:
             - configMapRef:
                 name: site-configmap
