@@ -64,8 +64,6 @@
 
 <body>
     <?php
-
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form data
         $name = $_POST["name"];
@@ -85,20 +83,21 @@
 
         try {
             $env = parse_ini_file('.env');
-            if ($env !== null) {
+            // error_log(print_r("ENV:" . $env, true));
+            /// error_log(print_r("Is array:" . is_array($env), true));
+            // $isEmpty = count($env) === 0;
+            if ($env['MYSQL_HOST'] === true) {
+                ///   error_log(print_r("herer:" . $env, true));
+                //if ($env !== null || $env.length) {
                 putenv("MYSQL_HOST=" . $env["MYSQL_HOST"]);
                 putenv("MYSQL_USER=" . $env["MYSQL_USER"]);
                 putenv("MYSQL_PASSWORD=" . $env["MYSQL_PASSWORD"]);
                 putenv("MYSQL_DATABASE=" . $env["MYSQL_DATABASE"]);
             }
         } catch (Exception $e) {
+            error_log(print_r("exception:" . $e->getMessage(), true));
         }
 
-
-
-        //$host0 = $env["MYSQL_HOST"];
-        //error_log(print_r("host0:" . $host0, true));
-    
         $host =
             getenv('MYSQL_HOST', true) ?: getenv('MYSQL_HOST');
         //$env["MYSQL_HOST"];
@@ -116,8 +115,6 @@
             getenv('MYSQL_DATABASE', true) ?: getenv('MYSQL_DATABASE');
         //$env["MYSQL_DATABASE"];
     
-        // Attempt to connect to the database
-        // Create connection
         $conn = new mysqli($host, $username, $password, $dbname);
         // Check connection
         if ($conn->connect_error) {

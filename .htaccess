@@ -1,4 +1,7 @@
 RewriteEngine On
+php_flag display_errors off
+
+
 RewriteRule ^index\\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
