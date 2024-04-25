@@ -29,7 +29,7 @@ jobs:
       
     
     - name: Print .env var  
-      run: echo "php version is ${{ steps.dotenv.outputs.PHP_VERSION }}"
+      run: echo "php version is $PHP_VERSION"
     
     - name: Generate build number
       uses: einaregilsson/build-number@v3
