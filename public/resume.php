@@ -34,8 +34,8 @@
         <h1>Hossam Kandel Mohamed</h1>
         <p>Solutions Architect</p>
         <div class="social-links">
-            <a href="https://www.meetup.com/members/231308446/" target="_blank"><i class="fas fa-calendar-alt"></i>
-                Meetup Profile</a>
+            <a href="https://www.meetup.com/members/231308446/" target="_blank"><i class="fa-brands fa-meetup"></i>
+                Meetup</a>
             <a href="https://www.linkedin.com/in/hossamkandel/" target="_blank"><i class="fab fa-linkedin"></i>
                 LinkedIn</a>
             <a href="https://github.com/hkandeal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -61,11 +61,6 @@
 
     <section id="experience">
         <h2>Experience</h2>
-
-        <!--
-        <div class="experience-item">
-            <div class="company-icon"><i class="fas fa-building"></i></div>
-        </div>-->
 
         <div class="experience-item">
             <p><u>
