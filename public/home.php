@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossam Kandel Mohamed</title>
-    <link rel="stylesheet" href="public/style/home-style.css">
+    <link rel="stylesheet" href="/public/style/home-style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="public/res/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="public/res/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="public/res/icons/apple-icon-72x72.png">
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="public/res/icons/favicon-16x16.png">
     <link rel="manifest" href="public/res/icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="public/res/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Hossam Kandel Mohamed" />
     <meta property="og:image" content="https://hossam.io/public/res/info.png" />
@@ -57,7 +57,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <img src="public/res/intro.jpg" alt="Hossam Kandel Mohamed" class="profile-photo">
+            <img src="/public/res/home.png" alt="Hossam Kandel Mohamed" class="profile-photo">
             <h1>Welcome to My Personal Site</h1>
             <p>Dive into the captivating journey of discovering who I am and where my career takes flight. .....</p>
             <a href="/about" class="btn btn-about">About Me</a> <!-- Added button for About Me -->

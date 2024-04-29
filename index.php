@@ -2,6 +2,11 @@
 
 
 $request = $_SERVER["REQUEST_URI"];
+error_log(print_r("original request:" . $request, true));
+
+// if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js|json)$/', $_SERVER["REQUEST_URI"]))
+//     require __DIR__ . $request;
+
 //$parsedURL = parse_url($request, PHP_URL_QUERY);
 $url = strtok($request, '?');
 

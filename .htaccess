@@ -1,8 +1,37 @@
+# Enable RewriteEngine
 RewriteEngine On
 php_flag display_errors off
 
+# Disable files and directories index listing
+Options -Indexes
+DirectoryIndex index.php
 
-RewriteRule ^index\\.php$ - [L]
+# Deny all files except index.php and specified extensions
+<FilesMatch "^(?!index\.php$).*\.(?!css|js|jpe?g|png|gif$)[^.]+$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Allow access to all PHP files
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Allow access to PHP files in public folder without .php extension
+<FilesMatch "^public/.*\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Allow access to sitemap
+<FilesMatch "sitemap.xml">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Route all requests to index.php except for existing files and directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteCond %{REQUEST_URI} !^/index\.php$
+RewriteRule ^ /index.php [L]
