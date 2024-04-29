@@ -26,9 +26,9 @@ switch ($url) {
     case '/blog':
         require __DIR__ . '/public/blog.php';
         break;
-    // case '/about':
-    //     require __DIR__ . '/public/about.php';
-    //     break;
+    case '/about':
+        require __DIR__ . '/public/about.php';
+        break;
     case '/home':
         require __DIR__ . '/public/home.php';
         break;

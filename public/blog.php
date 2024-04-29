@@ -56,7 +56,7 @@
 
 <body>
     <div class="container">
-        <img src="public/res/under-construction.png" alt="Under Construction" class="construction-image">
+        <img src="public/res/under-construcation.jpg" alt="Under Construction" class="construction-image">
         <h1>Under Construction</h1>
         <p>We're sorry, but this page is currently under construction.</p>
         <p>Please check back later.</p>

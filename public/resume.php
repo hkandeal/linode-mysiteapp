@@ -34,11 +34,11 @@
         <h1>Hossam Kandel Mohamed</h1>
         <p>Solutions Architect</p>
         <div class="social-links">
+            <a href="https://www.meetup.com/members/231308446/" target="_blank"><i class="fas fa-calendar-alt"></i>
+                Meetup Profile</a>
             <a href="https://www.linkedin.com/in/hossamkandel/" target="_blank"><i class="fab fa-linkedin"></i>
                 LinkedIn</a>
             <a href="https://github.com/hkandeal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://boycottisraeli.biz" target="_blank"><i class="fas fa-skull-crossbones"></i>
-                Boycott Israel</a>
         </div>
     </header>
 
@@ -46,12 +46,15 @@
         <h2>About Me</h2>
         <div class="about-item">
             <div class="icon-placeholder"><i class="fa fa-address-book"></i></div>
-            <p>A creative and versatile Information Technology professional with over 15 years of experience in digital
-                solutions, enterprise integration, business automation and content management.
-                Architecting and developing applications and managing teams in the web and mobile arena. With hands-on
-                experience in multiple technology stacks, agile transformations and an in-depth understanding of the web
-                and
-                mobile industries and architectures across all major platforms
+            <p>With over 15 years of robust experience in Information Technology, I am recognized for my adept
+                leadership and knack for crafting innovative solutions. <br>
+                As a seasoned professional, I've led numerous teams in architecting and developing cutting-edge
+                applications, driving digital transformations, and navigating the complexities of the web and mobile
+                landscape. <br>
+                My hands-on expertise spans multiple technology stacks, enabling me to spearhead agile transformations
+                and deliver transformative results. With a deep understanding of industry architectures across major
+                platforms, I excel in building forward-thinking solutions that drive business growth and exceed
+                expectations.
             </p>
         </div>
     </section>
@@ -78,54 +81,48 @@
                     <h3><img src="public/res/emirates.jpeg" alt="" class="company-photo">Emirates Group, 2021 - 2023
                     </h3>
                 </u></p>
-            <i class="fas fa-code"> </i> Software Solutions Architect
+            <i class="fas fa-code"> </i> <u>Software Solutions Architect</u>
             <ul>
-                <li>• Working with the enterprise, lead architects and business on defining architectural enablers,
-                    transitions phases and solutions.</li>
-                <li>• Introducing large set of architectural solutions and ADRs to address Mobile App and booking
-                    engine
-                    technical vision of containerization and modernization roadmap.</li>
-                <li>• Working with features teams daily activities, solution refinement, technical design, sprints
-                    and
-                    PI
-                    planning.</li>
-                <li>• Participating into enterprise APIs reviews and guidelines and leveraging omni-channel
-                    enterprise
-                    services.</li>
-                <li>• Conducting architecture review on existing systems and frameworks.</li>
-                <li>• Participating into migrating legacy systems from on-prem data center into AWS cloud
-                    infrastructure.
-                </li>
+                <li>Introducing a diverse range of architectural solution designs and Architectural Decision Records
+                    (ADRs) to effectively address Web and Mobile business needs.
+                <li>Collaborating with enterprise architects, teams architects, and business stakeholders to define
+                    comprehensive architecture roadmaps, enablers, transition phases, and the technical vision for
+                    containerization and modernization initiatives.
+                <li>Engaging with feature teams on a daily basis to facilitate solutionS refinement, technical design
+                    discussions, and sprints and program increments (PIs) planning."
+                <li>Participating in enterprise API reviews and guidelines development, leveraging omni-channel
+                    services to ensure seamless integration and interoperability within the organization.
+                <li>Conducting thorough architecture reviews of existing systems and frameworks to identify
+                    opportunities for enhancement and optimization.
+                <li>Leading various strategic initiatives, including the migration of WMAP Openshift workloads to AWS
+                    EKS
             </ul>
         </div>
         <div class="experience-item">
             <p>
                 <u>
-                    <h3><img src="public/res/gbm.jpeg" alt="" class="company-photo">GBM, 2015 - 2021</h3>
+                    <h3><img src="public/res/gbm.jpeg" alt="" class="company-photo">Gulf Business Mahcines (GBM), 2015 -
+                        2021</h3>
                 </u>
             </p>
-            <i class="fas fa-code"> </i> Digital Business Solutions Technical Architect
+            <i class="fas fa-code"> </i> <u>Digital Business Solutions Technical Architect</u>
             <ul>
-                <li>• Creating systems high/low level design, building right delivery team structure
-                <li> • Working closely on the ground with the implementation teams on the technical daily
-                    activities,
-                    make sure the
-                    evolving solutions match the design, required quality attributes and best practices. These
-                    including
-                    code review,
-                    frequent system demos and design sessions.
-                <li> • Evaluating project platforms/technology stack and best methodology for implementation
-                    delivery.
-                <li> • Assisting project managers in capturing a detailed project plan, providing work breakdown and
-                    tasks dependencies.
-                <li> • Conduct and actively participate in stakeholder discussions to identify business and
-                    technical
-                    requirements, seek
-                    consensus, and evaluate alternative business and technical solutions.
-                <li> • Participating in pre-sales activities such as preparing client demos, POCs and reviewing
-                    technical
-                    RFPs.
-                <li> • Actively managing customer relationships
+                <li>Developing comprehensive high and low-level system designs, while structuring delivery teams
+                    for
+                    optimal performance and efficiency.
+                <li>Providing hands-on support to implementation teams, ensuring seamless alignment with project
+                    objectives, design specifications, and quality standards through diligent oversight,
+                    including code
+                    reviews, regular system demonstrations, and design workshops.
+                <li>Facilitating stakeholder discussions to identify and align business and technical
+                    requirements,
+                    fostering consensus, and evaluating alternative solutions to meet project objectives."
+                <li>Engaging in pre-sales activities such as preparing client demonstrations, proof-of-concepts
+                    (POCs), and reviewing technical requests for proposals (RFPs) to support business
+                    development
+                    efforts.
+                <li>Proactively managing and nurturing customer relationships to ensure satisfaction and drive
+                    long-term partnerships and business success.
             </ul>
         </div>
         <div class="experience-item">
@@ -135,12 +132,17 @@
                         2015</h3>
                 </u>
             </p>
-            <i class="fas fa-code"> </i> Eterprise Content Management Specialist / J2EE Senior Developer
+            <i class="fas fa-code"> </i> <u>Eterprise Content Management Specialist / J2EE Senior Developer </u>
             <ul>
-                <li>• Providing detailed low level and high-level technical design for my selected projects.
-                <li>• Implementation of IBM Case Manager/FileNet projects, and custom J2EE applications.
-                <li>• Implementation of extensive integration layer using EJB and SOAP web services.
-                <li>• Provide technical guidance and on the ground leadership for different teams.
+                <li>Offering comprehensive technical guidance and hands-on leadership to diverse teams, ensuring
+                    cohesive collaboration and successful project execution..
+                <li>Delivering meticulous low-level and high-level technical designs for selected projects,
+                    meticulously outlining intricate technical specs to drive project success and alignment
+                    with organizational goals..
+                <li>Design and develop IBM FileNet and IBM BPM Case Manager solutions. leveraging industry best
+                    practices to deliver efficient and effective solutions tailored to business needs
+                <li>Development of custom J2EE applications, adept at crafting robust solutions that meet client
+                    requirements and adhere to coding standards and project specifications
             </ul>
         </div>
         <div class="experience-item">
@@ -150,13 +152,12 @@
                         2013</h3>
                 </u>
             </p>
-            <i class="fas fa-code"> </i> IT Specialist - Software Engineer
+            <i class="fas fa-code"> </i> <u>IT Specialist - Software Engineer</u>
             <ul>
-                <li>• Develop IBM FileNet and IBM Case Manager BPM solutions.
-                <li>• Develop and support different custom J2EE enterprise applications.
-                <li>• Participate in writing business use cases, components technical design and development on
-                    different
-                    tools and platforms.
+                <li>Design and develop IBM FileNet and IBM BPM Case Manager solutions. leveraging industry best
+                    practices to deliver efficient and effective solutions tailored to business needs
+                <li>Development of custom J2EE applications, adept at crafting robust solutions that meet client
+                    requirements and adhere to coding standards and project specifications
             </ul>
         </div>
         <!-- Additional experience items can be added here -->
@@ -173,17 +174,17 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="social-links">
                 <a href="/contact"><i class="far fa-comments"></i> Contact</a>
                 <a href="/blog"><i class="fas fa-blog"></i> Blog</a>
+                <a href="https://boycottisraeli.biz" target="_blank"><i class="fas fa-skull-crossbones"></i> Boycott
+                    Israel</a>
             </div>
             <p>&copy; 2024 Hossam Kandel Mohamed</p>
         </div>
     </footer>
-
 </body>
 
 </html>

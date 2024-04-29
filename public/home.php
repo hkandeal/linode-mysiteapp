@@ -31,7 +31,25 @@
     <meta property="og:image:height" content='627' />
     <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
     <meta property="og:type" content='website' />
+    <style>
+        /* Additional styles for animations */
+        .btn {
+            transition: transform 0.3s;
+        }
 
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-about {
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn-about:hover {
+            transform: scale(1.05);
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,9 +57,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <img src="public/res/info.png" alt="Hossam Kandel Mohamed" class="profile-photo">
+            <img src="public/res/intro.jpg" alt="Hossam Kandel Mohamed" class="profile-photo">
             <h1>Welcome to My Personal Site</h1>
-            <p>Explore my projects and skills in the software industry</p>
+            <p>Dive into the captivating journey of discovering who I am and where my career takes flight. .....</p>
+            <a href="/about" class="btn btn-about">About Me</a> <!-- Added button for About Me -->
             <a href="/resume" class="btn">View Resume</a>
         </div>
     </section>
