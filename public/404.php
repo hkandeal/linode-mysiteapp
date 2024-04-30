@@ -7,7 +7,6 @@
     <title>Page Not Found</title>
     <!-- <link rel="stylesheet" href="public/style/styles.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="/public/style/home-style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/public/res/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/public/res/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/public/res/icons/apple-icon-72x72.png">

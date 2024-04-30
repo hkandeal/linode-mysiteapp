@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossam Kandel Mohamed</title>
-    <link rel="stylesheet" href="/public/style/home-style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/public/res/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/public/res/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/public/res/icons/apple-icon-72x72.png">
