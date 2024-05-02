@@ -33,21 +33,34 @@ li p {
 header {
     background-color: #e71240; /* Green header background */
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    animation: headerAnimation 1s ease-in-out;
+}
+
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 header h1 {
     margin: 0;
-    font-size: 32px; /* Larger font size */
+    font-size: 20px; /* Larger font size */
 }
 
 .profile-photo {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 10px; /* Increased margin */
-    border: 5px solid #fff; /* White border around photo */
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px; /* Increased margin */
+    border: 3px solid #fff; /* White border around photo */
 }
 
 .company-photo {

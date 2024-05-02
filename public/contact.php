@@ -21,56 +21,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/public/style/common-style.css">
+    <link rel="stylesheet" href="/public/style/contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Contact Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        form {
-            text-align: center;
-        }
-
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 
 <body>
@@ -83,6 +37,17 @@
             <input type="submit" value="Send Message">
         </form>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="/home"><i class="far fa-comments"></i> Home</a>
+                <a href="/blog"><i class="fas fa-blog"></i> Blog</a>
+                <a href="https://boycottisraeli.biz" target="_blank"><i class="fas fa-skull-crossbones"></i> Boycott
+                    Israel</a>
+            </div>
+            <p>&copy; 2024 Hossam Kandel Mohamed</p>
+        </div>
+    </footer>
 </body>
 
 </html>

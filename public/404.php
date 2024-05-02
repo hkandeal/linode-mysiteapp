@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
-    <!-- <link rel="stylesheet" href="public/style/styles.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/public/res/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/public/res/icons/apple-icon-60x60.png">
@@ -24,42 +23,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            text-align: center;
-            padding-top: 50px;
-        }
+    <link rel="stylesheet" href="/public/style/common-style.css">
+    <link rel="stylesheet" href="/public/style/error-style.css">
 
-        h1 {
-            color: #333;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .fa-code {
-            font-size: 36px;
-            color: #007bff;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
@@ -69,6 +35,17 @@
         </p>
         <a href="/" class="home-link"><i class="fas fa-hand-point-right"></i> Home page</a>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="/home"><i class="far fa-comments"></i> Home</a>
+                <a href="/blog"><i class="fas fa-blog"></i> Blog</a>
+                <a href="https://boycottisraeli.biz" target="_blank"><i class="fas fa-skull-crossbones"></i> Boycott
+                    Israel</a>
+            </div>
+            <p>&copy; 2024 Hossam Kandel Mohamed</p>
+        </div>
+    </footer>
 </body>
 
 </html>

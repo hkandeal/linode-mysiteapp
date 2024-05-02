@@ -24,6 +24,7 @@
     <meta name="msapplication-TileImage" content="/public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/public/style/resume-style.css">
+    <link rel="stylesheet" href="/public/style/common-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>

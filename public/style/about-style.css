@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+header {
+    background-color: #e71240; /* Green header background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    animation: headerAnimation 1s ease-in-out;
+}
+
+header p
+{
+    color: #fff;
+}
+
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+}
+
+.hobby {
+    margin-bottom: 40px;
+}
+
+.hobby img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: iconAnimation 1s ease-in-out;
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation for child sections */
+#intro:hover .hobby {
+    transform: translateX(20px);
+}
