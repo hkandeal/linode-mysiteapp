@@ -1,170 +1,132 @@
-/* Reset styles */
-
-/* public/style/home-style.css */
-
-.profile-photo {
-  border-radius: 50%;
-  width: 300px;
-  height: 350px;
-  margin-bottom: 20px;
-}
-
-* {
+   /* Additional styles for animations */
+   body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out both;
+}
+
+h1 {
+    font-size: 3rem;
     color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Hero section */
-  .hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    margin-top: 1rem;
+    animation: slideInDown 1s ease-in-out both;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    animation: slideInUp 1s ease-in-out both;
+}
+
+.link-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  /* Services section */
-  .services {
-    padding: 80px 0;
-  }
-  
-  .services h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .service {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .service i {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Portfolio section */
-  .portfolio {
-    padding: 80px 0;
-  }
-  
-  .portfolio h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .portfolio-item {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .portfolio-item img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  /* Contact section */
-  .contact {
-    background-color: #007bff;
-    color: #fff;
-    padding: 80px 0;
-  }
-  
-  .contact h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .contact input[type="text"],
-  .contact input[type="email"],
-  .contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .contact textarea {
-    height: 150px;
-  }
-  
-  .contact button {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact button:hover {
-    background-color: #0056b3;
-    color: #fff;
-  }
-  
-  /* Button */
-  .btn {
+    margin-top: 2rem;
+}
+
+.link {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
+    color: #0056b3;
+    padding: 1rem 2rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.5rem;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+    margin: 0 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #003d73;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.link:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.link span {
+    position: relative;
+    z-index: 2;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+    color: #fff;
+    background-color: #003d73;
+}
+
+.btn-about {
+    animation-delay: 0.2s;
+}
+
+.btn-resume {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    .hero p {
-      font-size: 1rem;
+
+    100% {
+        opacity: 1;
     }
-    .service i {
-      font-size: 2rem;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
     }
-    .contact input[type="text"],
-    .contact input[type="email"],
-    .contact textarea {
-      padding: 8px;
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

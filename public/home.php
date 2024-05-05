@@ -31,25 +31,6 @@
     <meta property="og:image:height" content='627' />
     <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
     <meta property="og:type" content='website' />
-    <style>
-        /* Additional styles for animations */
-        .btn {
-            transition: transform 0.3s;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-        }
-
-        .btn-about {
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .btn-about:hover {
-            transform: scale(1.05);
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 
 <body>
@@ -59,9 +40,11 @@
         <div class="container">
             <img src="/public/res/home.png" alt="Hossam Kandel Mohamed" class="profile-photo">
             <h1>Welcome to My Personal Site</h1>
-            <p>Dive into the captivating journey of discovering who I am and where my career takes flight. .....</p>
-            <a href="/about" class="btn btn-about">About Me</a> <!-- Added button for About Me -->
-            <a href="/resume" class="btn">View Resume</a>
+            <p>Dive into the captivating journey of discovering who I am and where my career takes flight.</p>
+            <div class="link-container">
+                <a href="/about" class="link btn-about"><span>About Me</span></a>
+                <a href="/resume" class="link btn-resume"><span>View Resume</span></a>
+            </div>
         </div>
     </section>
 
