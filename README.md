@@ -10,8 +10,14 @@
 
  ✨My Personal Website✨
 
+docker image rm linode-mysiteapp-php   
+docker compose down 
+docker-compose up -d  
+
 ## Features
 
+- K8s
+- CI/Cd using Hothub actions and ArgoCD 
 - Php Apache
 - Mysql
 - HTML/CSS

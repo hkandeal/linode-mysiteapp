@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+" 
+                        <?xml-stylesheet type="text/xsl" href="sitemapstylesheet.xslt"?>
+ 
+                        <!-- Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator -->
+
+                        <rss version="2.0">
+ 
+                        <channel>
+                                
+                        <title></title>
+
+                        <link></link>
+
+                        <description></description>
+<item>
+                        <guid>https://hossam.io</guid>
+                        <title>Hossam Kandel Mohamed</title>
+                        <link>https://hossam.io</link>
+                        <description></description></item>
+<item>
+                        <guid>https://hossam.io/about</guid>
+                        <title>About Me</title>
+                        <link>https://hossam.io/about</link>
+                        <description></description></item>
+<item>
+                        <guid>https://hossam.io/contact</guid>
+                        <title>Contact Me</title>
+                        <link>https://hossam.io/contact</link>
+                        <description></description></item>
+<item>
+                        <guid>https://hossam.io/home</guid>
+                        <title>Hossam Kandel Mohamed</title>
+                        <link>https://hossam.io/home</link>
+                        <description></description></item>
+<item>
+                        <guid>https://hossam.io/resume</guid>
+                        <title>Hossam Kandel Mohamed</title>
+                        <link>https://hossam.io/resume</link>
+                        <description></description></item>
+<item>
+                        <guid>https://hossam.io/blog</guid>
+                        <title>Under Construction</title>
+                        <link>https://hossam.io/blog</link>
+                        <description></description></item>
+</channel></rss>
+<!-- Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator -->

@@ -5,32 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossam Kandel Mohamed</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/public/style/home-style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="/public/res/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/public/res/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/public/res/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/public/res/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/public/res/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/public/res/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/public/res/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/public/res/icons/apple-icon-152x152.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon and Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/public/res/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/public/res/icons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/res/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/public/res/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/res/icons/favicon-16x16.png">
-    <link rel="manifest" href="/public/res/icons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Hossam Kandel Mohamed" />
     <meta property="og:image" content="https://hossam.io/public/res/info.png" />
     <meta property="og:description" content="Personal Website" />
     <meta property="og:url" content="https://hossam.io/" />
-    <meta property="og:image:width" content='1200' />
-    <meta property="og:image:height" content='627' />
-    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
-    <meta property="og:type" content='website' />
+    <meta property="og:type" content="website" />
 </head>
 
 <body>
@@ -47,6 +37,83 @@
             </div>
         </div>
     </section>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #fff;
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .link-container {
+            margin-top: 30px;
+        }
+
+        .link {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn-about {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            margin-right: 15px;
+        }
+
+        .btn-resume {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        }
+
+        .link:hover {
+            transform: translateY(-5px);
+        }
+
+        .link:active {
+            transform: translateY(2px);
+        }
+
+        .link span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .link:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 30px;
+            background: rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 0;
+        }
+
+        .link:hover:before {
+            opacity: 1;
+        }
+    </style>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
