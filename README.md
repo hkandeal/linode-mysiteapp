@@ -10,9 +10,6 @@
 
  ✨My Personal Website✨
 
-docker image rm linode-mysiteapp-php   
-docker compose down 
-docker-compose up -d  
 
 ## Features
 
@@ -22,3 +19,8 @@ docker-compose up -d
 - Mysql
 - HTML/CSS
 
+
+Commands to run
+- docker image rm linode-mysiteapp-php
+- docker compose down 
+- docker-compose up -d  

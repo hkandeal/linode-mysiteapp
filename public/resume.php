@@ -63,18 +63,10 @@
     <section id="experience">
         <h2>Experience</h2>
 
+
         <div class="experience-item">
             <p><u>
-                    <h3><img src="/public/res/backbase.jpeg" alt="" class="company-photo">Backbase, 2023 -
-                        Present</h3>
-                </u></p>
-            <i class="fas fa-code"> </i> Senior Solutions Architect
-            <ul>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <p><u>
-                    <h3><img src="/public/res/emirates.jpeg" alt="" class="company-photo">Emirates Group, 2021 - 2023
+                    <h3><img src="/public/res/emirates.jpeg" alt="" class="company-photo">Emirates Group, 2021 - Present
                     </h3>
                 </u></p>
             <i class="fas fa-code"> </i> <u>Software Solutions Architect</u>
