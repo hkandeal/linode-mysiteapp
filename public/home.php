@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Hossam Kandel Mohamed" />
+    <meta property="og:title" content="Hossam Kandel Mohamed Ibrahim" />
     <meta property="og:image" content="https://hossam.io/public/res/info.png" />
     <meta property="og:description" content="Personal Website" />
     <meta property="og:url" content="https://hossam.io/" />
@@ -55,7 +55,8 @@
 
         .profile-photo {
             border-radius: 50%;
-            max-width: 150px;
+            max-width: 250px;
+            height: 250;
             margin-bottom: 20px;
         }
 

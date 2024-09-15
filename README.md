@@ -20,7 +20,11 @@
 - HTML/CSS
 
 
-Commands to run
-- docker image rm linode-mysiteapp-php
+## Commands to run
 - docker compose down 
+- docker image rm linode-mysiteapp-php
 - docker-compose up -d  
+mysql -u root -p 
+connect mysite_db;
+select * from message\G;
+
