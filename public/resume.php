@@ -37,7 +37,7 @@
         <div class="social-links">
             <a href="https://www.meetup.com/members/231308446/" target="_blank"><i class="fa-brands fa-meetup"></i>
                 Meetup</a>
-            <a href="https://www.linkedin.com/in/hossamkandel/ target=" _blank"><i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/hossamkandel/" target="_blank"><i class="fab fa-linkedin"></i>
                 LinkedIn</a>
             <a href="https://github.com/hkandeal" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/public/res/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/public/res/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/public/res/icons/apple-icon-72x72.png">
@@ -21,13 +22,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/public/res/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/public/style/common-style.css">
+    <!--   <link rel="stylesheet" href="/public/style/common-style.css"> -->
     <link rel="stylesheet" href="/public/style/contact-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
+<!-- <body>
     <div class="container">
         <h1>Contact Me</h1>
         <form action="/sendcontact" method="POST">
@@ -48,6 +49,48 @@
             <p>&copy; 2024 Hossam Kandel Mohamed</p>
         </div>
     </footer>
+</body> -->
+
+
+
+<body>
+    <div class="contact-form-container">
+        <h2>Contact Me</h2>
+        <form action="/sendcontact" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-media">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/hkandeal/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/wanderlust_hos" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/hossamkandel/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/wanderlust.hos" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <a href="/" class="home-link"><i class="fas fa-hand-point-right"></i> Home page</a>
+        </div>
+    </div>
 </body>
 
 </html>
