@@ -29,21 +29,28 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>404 - Page Not Found</h1>
-        <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
-        </p>
-        <a href="/" class="home-link"><i class="fas fa-hand-point-right"></i> Home page</a>
-    </div>
+    <main class="container">
+        <div class="error-content">
+            <h1><span class="error-code">404</span>Page Not Found</h1>
+            <p class="error-message">The page you are looking for might have been removed, had its name changed, or is
+                temporarily unavailable.</p>
+            <a href="/" class="home-link">
+                <i class="fas fa-home"></i>
+                Return to Homepage
+            </a>
+        </div>
+    </main>
+
     <footer>
         <div class="footer-container">
-            <div class="social-links">
-                <a href="/home"><i class="far fa-comments"></i> Home</a>
-                <a href="/blog"><i class="fas fa-blog"></i> Blog</a>
-                <a href="https://boycottisraeli.biz" target="_blank"><i class="fas fa-skull-crossbones"></i> Boycott
-                    Israel</a>
-            </div>
-            <p>&copy; 2024 Hossam Kandel Mohamed</p>
+            <nav class="social-links">
+                <a href="/home" class="footer-link"><i class="far fa-comments"></i> Home</a>
+                <a href="/blog" class="footer-link"><i class="fas fa-blog"></i> Blog</a>
+                <a href="https://boycottisraeli.biz" class="footer-link" target="_blank">
+                    <i class="fas fa-skull-crossbones"></i> Boycott Israel
+                </a>
+            </nav>
+            <p class="copyright">&copy; 2024 Hossam Kandel Mohamed</p>
         </div>
     </footer>
 </body>

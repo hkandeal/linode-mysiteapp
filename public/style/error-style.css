@@ -10,16 +10,98 @@
         }
 
         .container {
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
         }
 
         .fa-code {
             font-size: 36px;
             color: #007bff;
+        }
+
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-code {
+            font-size: 4rem;
+            color: #ff4444;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: #666;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+        }
+
+        .home-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .footer-container {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-link {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #007bff;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #888;
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 3rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
         }
